@@ -34,7 +34,7 @@ query_vector = np.random.randn(1000, 768).astype(np.float32)
 query_vector = query_vector / np.linalg.norm(query_vector, axis=1, keepdims=True)
 
 # %%
-from hakesclient import Client, ClientConfig
+from hakesclient.components.searcher import Searcher
 
 # %%
 config = ClientConfig(search_worker_addrs=["http://localhost:2053"])

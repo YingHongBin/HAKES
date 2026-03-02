@@ -36,7 +36,7 @@ from hakesclient.components.embedder import Embedder
 from hakesclient.components.searcher import Searcher
 from hakesclient.extensions.mongodb import MongoDB
 from hakesclient.extensions.huggingface import HuggingFaceEmbedder
-from hakes.index.build import (
+from hakesclient.index.build import (
     init_hakes_params,
     build_dataset,
     train_hakes_params,
